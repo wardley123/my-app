@@ -25,7 +25,7 @@ export default function Home() {
           playsInline
         >
           <source
-            src="/videos/GreyParrotHomeVid.mp4"
+            src="/videos/GreyParrotHomevid.mp4"
             type="video/mp4"
           />
           Your browser does not support video.
