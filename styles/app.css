@@ -1,0 +1,53 @@
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  min-height: 110vh;
+  padding: 40px;
+}
+
+.hero-video {
+  flex: 1;
+  min-width: 0;
+}
+
+.parrot-video {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 16px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+/* Stack the video and title on smaller screens */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .parrot-video {
+    height: 300px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+}

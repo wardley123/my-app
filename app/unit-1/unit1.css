@@ -1,0 +1,185 @@
+.unit-page {
+  min-height: 100vh;
+  background: #090909;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.unit-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.parrot-image {
+  width: min(500px, 90vw);
+  height: 550px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.unit-content h1 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 400;
+}
+
+.unit-content p {
+  max-width: 600px;
+  margin: 0;
+  color: #cccccc;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .unit-content {
+    padding-top: 70px;
+  }
+}
+
+.nutrition-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px 30px;
+}
+
+.video-section {
+  width: 100%;
+}
+
+.parrot-video {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.diet-section h2 {
+  color: #b6c8a5;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.diet-section h3 {
+  margin-top: 25px;
+  color: white;
+}
+
+.diet-section p,
+.diet-section li {
+  color: #d0d0d0;
+  line-height: 1.8;
+}
+
+.diet-section li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .nutrition-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+  .parrot-video {
+    height: 300px;
+  }
+
+
+}
+
+.calcium-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+.Calcium-zoomIn {
+  width: 90%;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 35px;
+  box-sizing: border-box;
+
+  background-color: #151515;
+  border: 1px solid #303830;
+  border-radius: 16px;
+  color: #e5e5e5;
+}
+.Calcium-zoomIn h2 {
+  color: #b6c8a5;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.calcium-intro {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  text-align: center;
+  line-height: 1.8;
+  color: #d0d0d0;
+}
+
+.nutrient-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.nutrient-card {
+  background-color: #202420;
+  padding: 22px;
+  border-radius: 10px;
+  border-left: 4px solid #b6c8a5;
+}
+
+.nutrient-card h3,
+.calcium-note h3 {
+  color: #b6c8a5;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.nutrient-card p,
+.calcium-note p {
+  line-height: 1.7;
+  color: #d0d0d0;
+  margin-bottom: 0;
+}
+
+.calcium-note {
+  margin-top: 25px;
+  padding: 22px;
+  background-color: #252a24;
+  border-radius: 10px;
+}
+
+@media (max-width: 650px) {
+  .Calcium-zoomIn {
+    margin: 30px 15px;
+    padding: 22px;
+  }
+
+  .Calcium-zoomIn h2 {
+    font-size: 26px;
+  }
+
+  .nutrient-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
