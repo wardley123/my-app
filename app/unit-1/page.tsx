@@ -1,6 +1,5 @@
 import Navbar from "../components/navbar";
 import Image from "next/image";
-import greyParrot from "../unit1-image.jpg";
 import "./unit1.css";
 
 export default function UnitOne() {
@@ -11,7 +10,7 @@ export default function UnitOne() {
       <main className="unit-page">
         <section className="unit-content">
           <Image
-            src={greyParrot}
+            src= "/images/Psittacus_erithacus_107150604.jpg"
             alt="African grey parrot perched on a branch"
             width={400}
             height={200}
