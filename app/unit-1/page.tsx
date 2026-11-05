@@ -9,6 +9,20 @@ export default function UnitOne() {
 
       <main className="unit-page">
         <section className="unit-content">
+          <video
+            className="Parrot-diet"
+            autoPlay
+            muted
+            loop
+            playsInline
+            >
+              <source
+                src="/videos/Parrotdiet.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support HTML video.
+            </video>
+          {/*
           <Image
             src= "/images/Psittacus_erithacus_107150604.jpg"
             alt="African grey parrot perched on a branch"
@@ -17,7 +31,7 @@ export default function UnitOne() {
             priority
             className="parrot-image"
           />
-
+          */}
           <h1>Unit 1: African Grey Parrot</h1>
 
           <p>
@@ -46,7 +60,7 @@ export default function UnitOne() {
     </div>
 
     <div className="diet-section">
-      <h2>How It Works: Nutrition</h2>
+      <h2>African Grey Parrot Nutrition</h2>
 
       <p>
        The grey parrot diet usually consists of fruits, leaves, bark, and veggies such as arugula, watercress, kale, and sprouts.
@@ -113,7 +127,6 @@ export default function UnitOne() {
     </p>
   </div>
   </div>
-  <h1>test test </h1>
 </div>
     </>
   );

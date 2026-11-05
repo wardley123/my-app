@@ -20,8 +20,8 @@ export default function Home() {
         <video
           className="parrot-video"
           autoPlay
-          muted
           loop
+          muted
           playsInline
         >
           <source
